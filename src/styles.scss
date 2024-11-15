@@ -1,1 +1,11 @@
-/* You can add global styles to this file, and also import other style files */
+*{
+  margin: 0;
+  font-family: Rosarivo;
+}
+
+html,body{
+  background: linear-gradient(
+    rgb(252,228,252),
+    rgb(218,228,255)
+  ) no-repeat;
+}
