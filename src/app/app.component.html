@@ -1,1 +1,7 @@
-<app-playing-card></app-playing-card>
+<app-search-bar
+(submit)="increaseCount()"
+[(search)]="this.search"
+/>
+Click count : {{count}}<br/>
+Search : {{search}}
+<app-card-list/>

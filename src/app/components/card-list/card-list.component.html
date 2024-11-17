@@ -1,0 +1,5 @@
+<div class="card-list">
+  @for (playingCard of this.playingCards; track playingCard.id) {
+    <app-playing-card [playingCard]="playingCard"/>
+  }
+</div>

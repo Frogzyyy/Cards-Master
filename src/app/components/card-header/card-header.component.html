@@ -1,0 +1,10 @@
+<header>
+  <div class="title">
+    {{ cardName() }}
+  </div>
+  <div class="mana-cost">
+    @for (mana of cardIdentity().manaCost ; track cardIdentity().manaCost) {
+      <img [src]="'img/mana/'+mana+'.png'" alt="." class="icon">
+    }
+  </div>
+</header>

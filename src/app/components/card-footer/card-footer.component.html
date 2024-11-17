@@ -1,0 +1,16 @@
+<footer>
+  <div class="artist">
+    {{ cardYear() }}    {{ artistName() }}
+  </div>
+  @if (this.powerTought().power != '' && powerTought().tought != '') {
+    <div class="power-tought">
+      <div class="power">
+        {{ powerTought().power }}
+      </div>
+      /
+      <div class="tought">
+        {{ powerTought().tought }}
+      </div>
+    </div>
+  }
+</footer>

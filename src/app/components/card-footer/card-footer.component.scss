@@ -1,0 +1,19 @@
+footer,.power-tought{
+  background-color: lightgray;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.6);
+  border: outset 2px black;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  vertical-align: middle;
+  padding: 3px;
+}
+.power-tought{
+  font-weight: bold;
+  font-size: large;
+}
+.artist{
+  text-align: center;
+  margin: 3px;
+}

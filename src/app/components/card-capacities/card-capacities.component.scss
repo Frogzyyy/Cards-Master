@@ -1,0 +1,18 @@
+.capacities{
+  background-color: lightgray;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.6);
+  border-radius: 5px;
+  border: outset 2px black;
+  height: 110px;
+  display: flex;
+  flex-direction: column;
+  .capacity{
+    display: flex;
+    flex-direction: row;
+    vertical-align: middle;
+    margin: 5px;
+    .costs{
+      margin-right: 5%;
+    }
+  }
+}

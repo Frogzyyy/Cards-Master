@@ -1,47 +1,18 @@
 <div class="card">
 
-  <div class="inside">
-    <header>
-      <div class="title">
-        Card Name
-      </div>
-      <div class="mana-cost">
-        <img src="img/mana/color/green.png" alt="" class="icon">
-      </div>
-    </header>
+  <div class="inside" [ngStyle]="{ background : playingCard().cardIdentity.gradientString }">
+
+    <app-card-header [cardName]="playingCard().cardName" [cardIdentity]="playingCard().cardIdentity"/>
 
     <div class="artwork">
       <img src="" alt="">
     </div>
 
-    <div class="card-type">
-      <div class="type">
-        Card Type
-      </div>
-      <img src="img/icons/untap.png" alt="" class="extension icon">
-    </div>
+    <app-card-type [cardType]="playingCard().cardType" [cardExtension]="playingCard().extension"/>
 
-    <div class="capacities">
-      <div class="capacity">
-        <div class="cost">
-          <img src="img/icons/tap.png" alt="" class="icon">
-        </div>
-        <div class="description">
-          :  Capacity description
-        </div>
-      </div>
-    </div>
+    <app-card-capacities [capacities]="playingCard().capacities"/>
 
-    <footer>
-      <div class="artist">
-        Artist Name
-      </div>
-      <div class="power-tought">
-        <div class="power">10</div>
-        /
-        <div class="tought">10</div>
-      </div>
-    </footer>
+    <app-card-footer [cardYear]="playingCard().year" [artistName]="playingCard().artistName" [powerTought]="playingCard().powerTought"/>
   </div>
 
 </div>

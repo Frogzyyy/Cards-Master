@@ -1,116 +1,30 @@
-.icon{
-  width: 20px;
-}
 .card{
-  width: 280px;
+  width: 250px;
   aspect-ratio: 0.714;
+  transition: all 0.3s ease-in-out;
   background-color: black;
-  box-shadow: 5px 5px 20px darkgray;
+  box-shadow: 5px 5px 20px gray;
   border-radius: 10px;
   padding: 10px;
 }
 
 .inside{
-  background-color: green;
+  background-color: gray;
   border-radius: 7px;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   height: 100%;
   padding: 10px;
   gap: 7px;
 }
-
-
-header{
-  background-color: lightgray;
-  opacity: 0.8;
-  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.6);
-  border-radius: 5px;
-  border: outset 2px black;
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between ;
-  vertical-align: middle;
-}
-.title,.mana-cost{
-  height: 30px;
-  font-weight: bold;
-  font-size: 2em;
-}
-.title{
-  margin: 3px 0 0 5px;
-}
-.mana-cost{
-  margin: 5px 5px 0 0;
-}
-
 .artwork{
-  height: 40%;
+  height: 35%;
   width: 100%;
   border-radius: 5px;
   background-color: lightgray;
   opacity: 0.5;
 }
-
-.card-type{
-  background-color: lightgray;
-  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.6);
-  opacity: 0.8;
-  border-radius: 5px;
-  border: outset 2px black;
-  font-weight: bold;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  padding: 5px;
+.card:hover{
+  box-shadow: 10px 10px 30px black;
 }
-.type{
-  margin-left: 3px 0 0 10px;
-}
-
-.capacities{
-  background-color: lightgray;
-  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.6);
-  opacity: 0.8;
-  font-size: large;
-  border-radius: 5px;
-  border: outset 2px black;
-  height: 35%;
-  display: flex;
-  flex-direction: column;
-  .capacity{
-    display: flex;
-    flex-direction: row;
-    vertical-align: middle;
-    margin: 5px;
-    .cost{
-      margin-right: 5%;
-    }
-  }
-}
-
-
-
-footer,.power-tought{
-  background-color: lightgray;
-  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.6);
-  border: outset 2px black;
-  opacity: 0.8;
-  border-radius: 5px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  vertical-align: middle;
-  padding: 3px;
-}
-.power-tought{
-  font-weight: bold;
-  font-size: large;
-}
-.artist{
-  text-align: center;
-  margin: 3px;
-}
-
-
