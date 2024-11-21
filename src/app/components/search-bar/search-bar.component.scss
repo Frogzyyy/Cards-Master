@@ -1,11 +1,12 @@
 #search-bar{
   display: flex;
-  background-color: white;
+  background-color: rgb(60, 61, 55);
   border-radius: 40px;
   margin: 50px auto;
   width: 400px;
   box-shadow: 3px 3px 10px -3px grey;
   overflow: hidden;
+  color: rgb(236, 223, 204);
 }
 input{
   all: unset;
@@ -13,18 +14,21 @@ input{
   padding: 10px 20px;
 }
 button{
-  border: none;
+  width: 30px;
+  height: 30px;
   margin: 5px;
   padding: 5px;
+
+  border: none;
   border-radius: 40px;
-  background-color: rgb(205,205,255);
-  width: 30px;
+
+  background-color: rgb(105, 117, 101);
   cursor: pointer;
 }
 button img{
   max-width: 18px;
   max-height: 18px;
 }
-button:hover{
-  background-color: rgb(179,179,255);
+button:active{
+  background-color: rgb(236, 223, 204);
 }

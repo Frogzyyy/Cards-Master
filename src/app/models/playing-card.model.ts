@@ -1,22 +1,26 @@
+import { Extensions } from '../utils/extension.utils';
+import { CardIdentity } from './../utils/playing-card.utils';
 import { Capacity } from "./capacity.model";
-import { CardIdentity } from "./card-identity.model";
 import { PowerTought } from "./power-tought.model";
 
 export class PlayingCard{
 
-  id : string;
+  id!: string;
+  cardName!: string;
+  manaCost!: string[];
+  cardIdentity!: CardIdentity;
+  artworkURL!: string;
+  cardType!: string;
+  extension!: Extensions;
+  artistName!: string;
+  capacities?: Capacity[];
+  powerTought?: PowerTought;
 
-  constructor(
-    public cardName: string,
-    public cardIdentity: CardIdentity,
-    public artworkURL: string,
-    public cardType: string,
-    public extension: string,
-    public capacities: Capacity[],
-    public artistName: string,
-    public year: number,
-    public powerTought: PowerTought
-  ){
+  constructor(){
     this.id = crypto.randomUUID().substring(0,10);
+  }
+
+  copy():PlayingCard{
+    return Object.assign(new PlayingCard , this);
   }
 }

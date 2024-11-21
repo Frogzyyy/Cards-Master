@@ -1,21 +1,23 @@
 
 <div class="capacities">
-  @for (capacity of capacities() ; track capacities()){
-    <div class="capacity">
-      <div class="costs">
-        @for (cost of capacity.costs; track $index){
-          @if (cost === 'tap') {
-            <img [src]="'img/icons/'+cost+'.png'" alt="" class="icon">
-          }
-          @if (cost != 'tap'){
-            <img [src]="'img/mana/'+cost+'.png'" alt="" class="icon">
-          }
 
-        }
+    <div *ngFor="let capacity of capacities()" class="capacity">
+
+      <div class="costs">
+          <div *ngFor="let cost of capacity.costs">
+            @if (cost === 'tap') {
+              <img [src]="'img/icons/'+cost+'.png'" alt="" class="icon">
+            }
+            @if (cost != 'tap'){
+              <img [src]="'img/mana/'+cost+'.png'" alt="" class="icon">
+            }
+          </div>
       </div>
+
       <div class="description">
         <strong>:</strong>  {{ capacity.description }}
       </div>
+
     </div>
-  }
+
 </div>

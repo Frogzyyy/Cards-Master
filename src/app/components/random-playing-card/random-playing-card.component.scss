@@ -1,0 +1,29 @@
+button{
+  all: unset;
+  width: 400px;
+  height: auto;
+
+  margin: 50px auto;
+  padding: 15px;
+
+  border-radius: 40px;
+  background-color: rgb(60, 61, 55);
+  box-shadow: 3px 3px 10px -3px grey;
+
+  text-align: center;
+  color: rgb(236, 223, 204);
+  font-size: 1.5em;
+
+}
+button:hover{
+  cursor: pointer;
+}
+button:active{
+  background-color: rgb(105, 117, 101);
+}
+
+.randomCard{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

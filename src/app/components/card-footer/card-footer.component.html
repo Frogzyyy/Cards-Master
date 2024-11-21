@@ -2,14 +2,14 @@
   <div class="artist">
     {{ cardYear() }}    {{ artistName() }}
   </div>
-  @if (this.powerTought().power != '' && powerTought().tought != '') {
+  @if (this.powerTought()) {
     <div class="power-tought">
       <div class="power">
-        {{ powerTought().power }}
+        {{ powerTought()?.power}}
       </div>
-      /
+       /
       <div class="tought">
-        {{ powerTought().tought }}
+        {{ powerTought()?.tought }}
       </div>
     </div>
   }

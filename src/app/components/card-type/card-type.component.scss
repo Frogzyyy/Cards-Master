@@ -1,14 +1,19 @@
 .card-type{
-  background-color: lightgray;
-  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.6);
-  border-radius: 5px;
-  border: outset 2px black;
-  font-weight: bold;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 5px;
+  height: 25px;
+
+  background-color: lightgray;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.6);
+  border-radius: 5px;
+  border: solid 2px rgb(70,70,70);
+  font-weight: bold;
+  font-size: small;
 }
 .type{
-  margin-left: 3px 0 0 10px;
+  margin: 5px 0 0 5px;
+}
+img{
+  margin: 5px;
 }

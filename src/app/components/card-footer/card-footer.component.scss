@@ -1,19 +1,28 @@
-footer,.power-tought{
-  background-color: lightgray;
-  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.6);
-  border: outset 2px black;
+footer{
   border-radius: 5px;
   display: flex;
   flex-direction: row;
+  height: 10px;
   justify-content: space-between;
-  vertical-align: middle;
-  padding: 3px;
-}
-.power-tought{
-  font-weight: bold;
-  font-size: large;
 }
 .artist{
   text-align: center;
-  margin: 3px;
+  color: white;
+  font-size: 0.6em;
+  -webkit-text-stroke: 0.4px black;
+}
+.power-tought{
+  display: flex;
+  justify-content: center;
+  margin-top: -20px;
+  padding: 3px;
+  height: 20px;
+  width: 30px;
+
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.6);
+  border: solid 2px rgb(70,70,70);
+  border-radius: 5px;
+  background-color: lightgray;
+
+  font-weight: bold;
 }

@@ -12,5 +12,5 @@ export class CardFooterComponent{
 
   cardYear : InputSignal<number> = input.required();
   artistName : InputSignal<string> = input.required();
-  powerTought : InputSignal<PowerTought> = input.required();
+  powerTought : InputSignal<PowerTought|undefined> = input();
 }

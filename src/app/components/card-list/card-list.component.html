@@ -1,5 +1,19 @@
+<app-search-bar [(search)]="search"/>
+
+@if(filteredCards().length > 0){
+  <div class="center">
+    {{filteredCards().length}} card(s) found.
+  </div>
+} @else{
+  <div class="center">
+    No card found
+  </div>
+}
+
 <div class="card-list">
-  @for (playingCard of this.playingCards; track playingCard.id) {
+  @for (playingCard of this.filteredCards(); track playingCard.id)
+  {
     <app-playing-card [playingCard]="playingCard"/>
   }
 </div>
+

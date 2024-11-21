@@ -1,18 +1,18 @@
 <div class="card">
 
-  <div class="inside" [ngStyle]="{ background : playingCard().cardIdentity.gradientString }">
+  <div class="inside" [style.background]="this.background()">
 
-    <app-card-header [cardName]="playingCard().cardName" [cardIdentity]="playingCard().cardIdentity"/>
+    <app-card-header [cardName]="playingCard().cardName" [manaCost]="playingCard().manaCost"/>
 
-    <div class="artwork">
-      <img src="" alt="">
-    </div>
+    <div class="artwork" [ngStyle]="{'background-image': 'url('+playingCard().artworkURL+')'}"></div>
 
-    <app-card-type [cardType]="playingCard().cardType" [cardExtension]="playingCard().extension"/>
+    <app-card-type [cardType]="playingCard().cardType" [cardExtension]="this.extensionIconURL()"/>
 
     <app-card-capacities [capacities]="playingCard().capacities"/>
 
-    <app-card-footer [cardYear]="playingCard().year" [artistName]="playingCard().artistName" [powerTought]="playingCard().powerTought"/>
+    <app-card-footer [cardYear]="this.year()" [artistName]="playingCard().artistName" [powerTought]="playingCard().powerTought"/>
+
   </div>
 
 </div>
+

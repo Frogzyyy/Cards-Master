@@ -3,8 +3,6 @@
     {{ cardName() }}
   </div>
   <div class="mana-cost">
-    @for (mana of cardIdentity().manaCost ; track cardIdentity().manaCost) {
-      <img [src]="'img/mana/'+mana+'.png'" alt="." class="icon">
-    }
+      <img *ngFor="let mana of manaCost()" [src]="'img/mana/'+mana+'.png'" alt="." class="icon">
   </div>
 </header>

@@ -1,9 +1,12 @@
+a{
+  text-decoration: none;
+  color: black;
+}
 .card{
   width: 250px;
   aspect-ratio: 0.714;
   transition: all 0.3s ease-in-out;
   background-color: black;
-  box-shadow: 5px 5px 20px gray;
   border-radius: 10px;
   padding: 10px;
 }
@@ -13,18 +16,19 @@
   border-radius: 7px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  gap: 5px;
   height: 100%;
   padding: 10px;
-  gap: 7px;
 }
 .artwork{
-  height: 35%;
   width: 100%;
-  border-radius: 5px;
-  background-color: lightgray;
-  opacity: 0.5;
+  max-height: 140px;
+  aspect-ratio: 1.33;
+  border: solid 2px;
+  border-radius: 2px;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 .card:hover{
-  box-shadow: 10px 10px 30px black;
+  box-shadow: 10px 10px 30px rgb(105, 117, 101);
 }
